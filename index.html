@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kasir Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Kasir</h1>
+        <form id="form-kasir">
+            <label for="item">Nama Barang:</label>
+            <input type="text" id="item" name="item" required>
+            
+            <label for="price">Harga Barang:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            <button type="button" id="add-item">Tambah Barang</button>
+        </form>
+        
+        <h2>Daftar Belanja</h2>
+        <table id="shopping-list">
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                    <th>Total</th>
+                    <th>Hapus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Daftar barang akan ditambahkan di sini -->
+            </tbody>
+        </table>
+        
+        <h2>Total: Rp <span id="total-price">0</span></h2>
+        <button type="button" id="checkout">Checkout</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
